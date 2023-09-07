@@ -10,16 +10,29 @@ After that, you need to connect tx0 and rx0 of Arduino to txd and rxd of the mod
 
 According to the datasheet, we have the following options for setting the PWM frequency:
 ###### Set The PWM Frequency
+
 &nbsp;&nbsp;1)"S1FXXXT":setting PWM1 frequency of XXX HZ (001 ~ 999)
+
 &nbsp;&nbsp;2)"S1FXX.XT":set the frequency of PWM1 XX.X KHZ (00.1 ~ 99.9)
+
 &nbsp;&nbsp;3)"S1F:X.X.X.T":setting PWM1 frequency of XXX KHZ (0.0.1 ~ 1.5.0..)
+
 &nbsp;&nbsp;4)'S1':PWM1
+
 &nbsp;&nbsp;5)'S2':PWM2
+
 &nbsp;&nbsp;6)'F':Frequency
+
 &nbsp;&nbsp;7)'D':Duty Cycle
+
 &nbsp;&nbsp;8)'T'is the end flag
+
 ###### Set The PWM Duty Cycle
+
 &nbsp;&nbsp;1)"S1DXXXT":setting PWM1 duty cycle XXX;(001-100)
+
 &nbsp;&nbsp;2)"S2DXXXT":set PWM2 duty cycle XXX;(001-100)
+
 &nbsp;&nbsp;3)Setting Successful Return:DOWN
+
 &nbsp;&nbsp;4)Setting Failback:FALL
