@@ -1,0 +1,19 @@
+void setup() {
+  Serial.begin(9600);
+  Serial1.begin(9600);
+}
+
+void loop() {
+  // read from port 0, send to port 1:
+  if (Serial.available()) {
+    int inByte = Serial.read();
+    Serial1.print(inByte, DEC);
+    Serial.println("\n");
+  }
+  // read from port 1, send to port 0:
+  if (Serial1.available()) {
+    int inByte = Serial1.read();
+    Serial.print(inByte, DEC);
+    Serial.println("\n");
+  }
+}
